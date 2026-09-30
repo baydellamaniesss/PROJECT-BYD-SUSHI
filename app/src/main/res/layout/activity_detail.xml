@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BYD-SUSHI"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#D84315" />
+
+        <ImageView
+            android:id="@+id/imgSushi"
+            android:layout_width="280dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sushi"
+            android:scaleType="centerCrop"
+            android:contentDescription="Gambar sushi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Sushi"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#5D4037" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Sushi merupakan makanan khas Jepang yang dibuat dari nasi dan dipadukan dengan berbagai bahan seperti ikan, sayuran, dan nori."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Komposisi"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#5D4037" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="• Nasi sushi&#10;• Nori&#10;• Salmon&#10;• Mentimun&#10;• Saus sushi&#10;• Wijen"
+            android:textSize="16sp"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+
+</ScrollView>
