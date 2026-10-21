@@ -1,4 +1,4 @@
-package com.example.byd_sushi.pertemuan_4
+package com.example.byd_sushi.home.pertemuan_4
 
 import android.content.Intent
 import android.os.Bundle

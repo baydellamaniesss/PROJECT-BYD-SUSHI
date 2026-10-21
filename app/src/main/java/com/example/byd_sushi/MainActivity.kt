@@ -4,9 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.byd_sushi.databinding.ActivityMainBinding
-import com.example.byd_sushi.pertemuan_3.ThirdActivity
-import com.example.byd_sushi.pertemuan_4.FourthActivity
-import com.example.byd_sushi.pertemuan_5.FifthActivity
+import com.example.byd_sushi.home.pertemuan_3.ThirdActivity
+import com.example.byd_sushi.home.pertemuan_4.FourthActivity
+import com.example.byd_sushi.home.pertemuan_5.FifthActivity
 
 class MainActivity : AppCompatActivity() {
 

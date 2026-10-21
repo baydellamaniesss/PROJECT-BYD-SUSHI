@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import com.example.byd_sushi.R
 import com.example.byd_sushi.databinding.FragmentDataBinding
 import com.example.byd_sushi.databinding.ItemPenjualanBinding
-import com.example.byd_sushi.pertemuan_5.InputPenjualanActivity
+import com.example.byd_sushi.home.pertemuan_5.InputPenjualanActivity
 
 data class Transaksi(
     val produk: String,

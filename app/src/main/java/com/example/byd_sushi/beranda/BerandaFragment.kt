@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.byd_sushi.databinding.FragmentBerandaBinding
-import com.example.byd_sushi.pertemuan_5.WebViewActivity
+import com.example.byd_sushi.home.pertemuan_5.WebViewActivity
 
 class BerandaFragment : Fragment() {
 

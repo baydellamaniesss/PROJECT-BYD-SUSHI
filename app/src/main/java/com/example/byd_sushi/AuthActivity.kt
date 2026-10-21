@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.byd_sushi.databinding.ActivityAuthBinding
-
+import com.example.byd_sushi.BaseActivity
 class AuthActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAuthBinding
@@ -41,7 +41,7 @@ class AuthActivity : AppCompatActivity() {
                 editor.apply()
 
                 // [K] pindah ke MainActivity
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, BaseActivity::class.java))
                 finish()
             } else {
                 // [I] gagal -> tampilkan AlertDialog

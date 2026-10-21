@@ -8,9 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.byd_sushi.databinding.ActivityDashboardBinding
-import com.example.byd_sushi.pertemuan_5.FifthActivity
-import com.example.byd_sushi.pertemuan_5.WebViewActivity
-import com.example.byd_sushi.pertemuan_6.ProfilDeveloperActivity
+import com.example.byd_sushi.home.pertemuan_5.FifthActivity
+import com.example.byd_sushi.home.pertemuan_5.WebViewActivity
+import com.example.byd_sushi.home.pertemuan_6.ProfilDeveloperActivity
 
 class DashboardActivity : AppCompatActivity() {
 

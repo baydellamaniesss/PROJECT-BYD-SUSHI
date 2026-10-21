@@ -1,4 +1,4 @@
-package com.example.byd_sushi.pertemuan_6
+package com.example.byd_sushi.home.pertemuan_6
 
 import android.content.Intent
 import android.net.Uri

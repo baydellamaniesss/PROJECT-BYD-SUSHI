@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.byd_sushi.AuthActivity
 import com.example.byd_sushi.databinding.FragmentAkunBinding
-import com.example.byd_sushi.pertemuan_6.ProfilDeveloperActivity
+import com.example.byd_sushi.home.pertemuan_6.ProfilDeveloperActivity
 
 class AkunFragment : Fragment() {
 
