@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_restaurant"
+        android:title="Sushi" />
+    <item
+        android:id="@+id/beranda"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Beranda" />
+    <item
+        android:id="@+id/data"
+        android:icon="@drawable/ic_data"
+        android:title="Data" />
+    <item
+        android:id="@+id/laporan"
+        android:icon="@drawable/ic_report"
+        android:title="Laporan" />
+    <item
+        android:id="@+id/akun"
+        android:icon="@drawable/ic_person"
+        android:title="Akun" />
+</menu>
