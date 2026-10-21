@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.byd_sushi.databinding.ActivityMainBinding
 import com.example.byd_sushi.pertemuan_3.ThirdActivity
+import com.example.byd_sushi.pertemuan_4.FourthActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +22,13 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnKirimKode.setOnClickListener {
             startActivity(Intent(this, ThirdActivity::class.java))
+        }
+        binding.btnToFourth.setOnClickListener {
+            val intent = Intent(this, FourthActivity::class.java)
+            intent.putExtra("name", "Politeknik Caltex Riau")
+            intent.putExtra("from", "Rumbai")
+            intent.putExtra("age", 25)
+            startActivity(intent)
         }
     }
 }
