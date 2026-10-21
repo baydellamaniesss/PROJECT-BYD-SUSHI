@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">BYD-Sushi</string>
 
     <string name="brand">BYD-SUSHI</string>
+    <string name="app_name">Hebepku</string>
     <string name="tagline">Delicious Japanese Food</string>
     <string name="btn_my_project">My Project</string>
     <string name="btn_kirim_kode">Kirim Kode</string>

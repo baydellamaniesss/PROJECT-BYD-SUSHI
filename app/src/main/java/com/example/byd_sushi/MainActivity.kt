@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.byd_sushi.databinding.ActivityMainBinding
 import com.example.byd_sushi.pertemuan_3.ThirdActivity
 import com.example.byd_sushi.pertemuan_4.FourthActivity
+import com.example.byd_sushi.pertemuan_5.FifthActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         binding.btnMyProject.setOnClickListener {
             startActivity(Intent(this, DetailActivity::class.java))
         }
+        binding.btnDashboard.setOnClickListener {
+            startActivity(Intent(this, DashboardActivity::class.java))
+        }
 
         binding.btnKirimKode.setOnClickListener {
             startActivity(Intent(this, ThirdActivity::class.java))
@@ -29,6 +33,9 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("from", "Rumbai")
             intent.putExtra("age", 25)
             startActivity(intent)
+        }
+        binding.btnToFifth.setOnClickListener {
+            startActivity(Intent(this, FifthActivity::class.java))
         }
     }
 }

@@ -13,7 +13,14 @@
     <!-- Teal (status / link) -->
     <color name="teal">#2E8B7A</color>
     <color name="teal_light">#D6EEEA</color>
-
+    <!-- Warna khusus HEBEPKU -->
+    <color name="hebepku_purple">#6B2D7B</color>
+    <color name="hebepku_cream">#FDF8F2</color>
+    <color name="hebepku_pink">#F3DCE8</color>
+    <color name="hebepku_text">#2B1B33</color>
+    <color name="hebepku_card">#FFFFFF</color>
+    <color name="teal_accent">#2E7D6B</color>
+    <color name="text_muted">#6B5A70</color>
     <!-- Netral -->
     <color name="cream_bg">#FDF8F2</color>
     <color name="white">#FFFFFF</color>
