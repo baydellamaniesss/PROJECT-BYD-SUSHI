@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">BYD-Sushi</string>
+
+    <string name="brand">BYD-SUSHI</string>
+    <string name="tagline">Delicious Japanese Food</string>
+    <string name="btn_my_project">My Project</string>
+    <string name="btn_kirim_kode">Kirim Kode</string>
+
+    <string name="sushi_title">Sushi</string>
+    <string name="sushi_desc">Sushi merupakan makanan khas Jepang yang dibuat dari nasi dan dipadukan dengan berbagai bahan seperti ikan, sayuran, dan nori.</string>
+    <string name="komposisi">Komposisi</string>
+    <string name="komposisi_list">• Nasi sushi\n• Nori\n• Salmon\n• Mentimun\n• Saus sushi\n• Wijen</string>
+    <string name="desc_gambar_sushi">Gambar sushi</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="hint_no_tujuan">Nomor tujuan</string>
+    <string name="btn_kirim">Kirim</string>
+    <string name="hasil_pesan">Kode berhasil dikirim! Silahkan periksa nomor Anda</string>
 </resources>

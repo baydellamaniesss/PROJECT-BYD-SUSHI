@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
@@ -13,18 +12,24 @@
         android:theme="@style/Theme.BYDSushi">
 
         <activity
+            android:name=".pertemuan_3.ThirdResultActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".pertemuan_3.ThirdActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".DetailActivity"
             android:exported="false" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
     </application>

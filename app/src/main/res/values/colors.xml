@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Ungu (utama) -->
+    <color name="purple_dark">#4A1D5C</color>
+    <color name="purple_primary">#6B2D7B</color>
+    <color name="purple_light">#EFE3F4</color>
+
+    <!-- Emas (aksen) -->
+    <color name="gold">#D9A860</color>
+    <color name="gold_dark">#8A5A14</color>
+    <color name="gold_light">#F8EAD8</color>
+
+    <!-- Teal (status / link) -->
+    <color name="teal">#2E8B7A</color>
+    <color name="teal_light">#D6EEEA</color>
+
+    <!-- Netral -->
+    <color name="cream_bg">#FDF8F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#2B1B33</color>
+    <color name="text_secondary">#6B6B6B</color>
+    <color name="border">#E8E0D8</color>
 </resources>
