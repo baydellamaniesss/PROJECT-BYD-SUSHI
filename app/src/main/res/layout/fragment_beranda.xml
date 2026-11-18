@@ -153,6 +153,37 @@
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
 
+            <!-- ===== FITUR BARU: GRAFIK PENJUALAN MINGGUAN ===== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penjualan Mingguan"
+                        android:textColor="@color/purple_primary"
+                        android:textSize="16sp" />
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <!-- ================================================= -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -182,8 +213,6 @@
                 android:text="Sunscreen SPF 50  •  58 terjual  —  Rp4.930.000"
                 android:textSize="14sp" />
 
-
-
             <Button
                 android:id="@+id/btnInfoWeb"
                 android:layout_width="match_parent"
@@ -193,7 +222,6 @@
                 android:paddingVertical="12dp"
                 android:text="Info Kosmetik (Web)"
                 android:textColor="@color/purple_dark" />
-
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

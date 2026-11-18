@@ -35,6 +35,7 @@ android {
 }
 
 dependencies {
+
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
@@ -42,7 +43,17 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.material)
+    implementation("androidx.biometric:biometric:1.1.0")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+    // BARU: Pertemuan 11
+    implementation("androidx.recyclerview:recyclerview:1.3.2")          // RecyclerView
+    implementation("androidx.viewpager2:viewpager2:1.0.0")              // ViewPager2 (Tab + Onboarding)
+    implementation("com.tbuonomo:dotsindicator:5.1.0")                  // Indikator dots onboarding
+    implementation("com.github.bumptech.glide:glide:4.16.0")            // Load gambar dari URL
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+
 }

@@ -46,7 +46,9 @@ class AkunFragment : Fragment() {
                 .setTitle("Logout")
                 .setMessage("Yakin ingin keluar?")
                 .setPositiveButton("Ya") { dialog, _ ->
-                    sharedPref.edit().clear().apply()
+                    // hanya matikan status login, username tetap tersimpan
+                    // supaya login sidik jari bisa dipakai setelah logout
+                    sharedPref.edit().putBoolean("isLogin", false).apply()
                     dialog.dismiss()
                     startActivity(Intent(requireContext(), AuthActivity::class.java))
                     requireActivity().finish()

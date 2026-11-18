@@ -1,4 +1,3 @@
-
 package com.example.byd_sushi.home
 
 import android.content.Intent
@@ -8,9 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.byd_sushi.DetailActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.byd_sushi.DashboardActivity
+import com.example.byd_sushi.DetailActivity
 import com.example.byd_sushi.databinding.FragmentHomeBinding
+import com.example.byd_sushi.home.pertemuan_10.TenthActivity
 import com.example.byd_sushi.home.pertemuan_3.ThirdActivity
 import com.example.byd_sushi.home.pertemuan_4.FourthActivity
 import com.example.byd_sushi.home.pertemuan_5.FifthActivity
@@ -20,70 +21,55 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
+    private val menuList = listOf(
+        HomeMenuModel("project", "📁", "My Project", "Detail proyek"),
+        HomeMenuModel("dashboard", "📊", "Dashboard", "Laporan penjualan"),
+        HomeMenuModel("third", "✉️", "Kirim Kode", "Pertemuan 3"),
+        HomeMenuModel("fourth", "🏫", "Ke Fourth", "Pertemuan 4"),
+        HomeMenuModel("fifth", "🧾", "Ke Fifth", "Pertemuan 5"),
+        HomeMenuModel("tenth", "🗂️", "Tab & Produk", "Pertemuan 10")
+    )
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentHomeBinding.inflate(
-            inflater, container, false
-        )
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(
-        view: View,
-        savedInstanceState: Bundle?
-    ) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        (requireActivity() as AppCompatActivity)
-            .setSupportActionBar(binding.toolbar)
+        (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
+        (requireActivity() as AppCompatActivity).supportActionBar?.title = "Hebepku"
 
-        (requireActivity() as AppCompatActivity)
-            .supportActionBar?.title = "Sushi"
-
-        // Tombol My Project
-        binding.btnMyProject.setOnClickListener {
-            startActivity(
-                Intent(requireContext(), DetailActivity::class.java)
-            )
+        val menuAdapter = HomeMenuAdapter(menuList) { menu ->
+            when (menu.id) {
+                "project" -> open(DetailActivity::class.java)
+                "dashboard" -> open(DashboardActivity::class.java)
+                "third" -> open(ThirdActivity::class.java)
+                "fourth" -> {
+                    val intent = Intent(requireContext(), FourthActivity::class.java)
+                    intent.putExtra("name", "Politeknik Caltex Riau")
+                    intent.putExtra("from", "Rumbai")
+                    intent.putExtra("age", 25)
+                    startActivity(intent)
+                }
+                "fifth" -> open(FifthActivity::class.java)
+                "tenth" -> open(TenthActivity::class.java)
+            }
         }
 
-        // Tombol Dashboard
-        binding.btnDashboard.setOnClickListener {
-            startActivity(
-                Intent(requireContext(), DashboardActivity::class.java)
-            )
+        binding.rvHomeMenu.apply {
+            layoutManager = GridLayoutManager(requireContext(), 2)
+            adapter = menuAdapter
         }
+    }
 
-        // Tombol Kirim Kode
-        binding.btnKirimKode.setOnClickListener {
-            startActivity(
-                Intent(requireContext(), ThirdActivity::class.java)
-            )
-        }
-
-        // Tombol To Fourth
-        binding.btnToFourth.setOnClickListener {
-            val intent = Intent(
-                requireContext(),
-                FourthActivity::class.java
-            )
-
-            intent.putExtra("name", "Politeknik Caltex Riau")
-            intent.putExtra("from", "Rumbai")
-            intent.putExtra("age", 25)
-
-            startActivity(intent)
-        }
-
-        // Tombol To Fifth
-        binding.btnToFifth.setOnClickListener {
-            startActivity(
-                Intent(requireContext(), FifthActivity::class.java)
-            )
-        }
+    private fun open(target: Class<*>) {
+        startActivity(Intent(requireContext(), target))
     }
 
     override fun onDestroyView() {

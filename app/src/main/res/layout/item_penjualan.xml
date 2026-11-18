@@ -2,9 +2,11 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="5dp"
     app:cardBackgroundColor="@android:color/white"
     app:cardCornerRadius="14dp"
     app:cardElevation="1dp">
@@ -25,20 +27,27 @@
                 android:id="@+id/tvProduk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:textColor="@color/purple_primary"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="Lip Cream Velvet" />
 
             <TextView
                 android:id="@+id/tvInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
                 android:textColor="@color/text_muted"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                tools:text="30 Sep 2026 · 4 pcs" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:gravity="end"
             android:orientation="vertical">
 
@@ -47,13 +56,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/purple_dark"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="Rp360.000" />
 
             <TextView
                 android:id="@+id/tvStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="11sp" />
+                android:layout_marginTop="2dp"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="Selesai" />
         </LinearLayout>
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
