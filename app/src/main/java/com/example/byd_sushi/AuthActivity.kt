@@ -30,18 +30,13 @@ class AuthActivity : AppCompatActivity() {
             insets
         }
 
-        // status login (lama)
         // SharedPreferences status login (lama)
         val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
-        // data registrasi (dari RegisterActivity)
+        // SharedPreferences data registrasi (dari RegisterActivity)
         val regPrefs = getSharedPreferences("register_prefs", MODE_PRIVATE)
-
-
 
         // fitur baru: login biometrik
         binding.btnBiometrik.setOnClickListener { tampilkanBiometrik(sharedPref) }
-        // SharedPreferences data registrasi (baru, dari RegisterActivity)
-        val regPrefs = getSharedPreferences("register_prefs", MODE_PRIVATE)
 
         // tombol menuju halaman registrasi
         binding.btnDaftar.setOnClickListener {
